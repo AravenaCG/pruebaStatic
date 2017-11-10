@@ -2,3 +2,5 @@
 
 
 int dm_saveAll(ArrayList* pListaSocios);
+
+int dm_readAll(ArrayList* pListaSocios);

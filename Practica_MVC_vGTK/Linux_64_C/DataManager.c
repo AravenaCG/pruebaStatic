@@ -23,3 +23,33 @@ int dm_saveAll(ArrayList* pListaSocios)
     fclose(pArchivo);
 return retorno;
 }
+
+int dm_readAll(ArrayList* pListaSocios)
+{
+    int retornoIdMasAlto=0;
+
+    FILE* pArchivo;
+    Socio buffSocio;
+    Socio* pSocio;
+    pArchivo = fopen(ARCHIVO_SOCIOS, "rb");
+    int max=-1;
+    if (pArchivo!=NULL)
+    {
+
+        do{
+            if (fread(&buffSocio,sizeof(Socio),1,pArchivo)==1)
+            {
+                pSocio = soc_new(buffSocio.nombre,buffSocio.apellido,buffSocio.dni,buffSocio.id,SOCIO_ESTADO_ACTIVO);
+                al_add(pListaSocios,pSocio);
+                if (buffSocio.id>max)
+                {
+                    retornoIdMasAlto = buffSocio.id;
+                }
+            }
+          }while(!feof(pArchivo));
+
+
+
+    }
+    return retornoIdMasAlto;
+}

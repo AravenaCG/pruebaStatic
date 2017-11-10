@@ -6,7 +6,7 @@
 #include "Vista.h"
 #include "Controlador.h"
 #include "DataManager.h"
-
+ // incluir una nueva entidad
 static ArrayList* nominaSocios;
 static int proximoIdSocio=0;
 static int getNewId();
@@ -14,10 +14,18 @@ static int setNewId(int id);
 
 void cont_init()
 {
+    int ultId;
     nominaSocios = al_newArrayList();
+
+
+
     setNewId(0);
     vista_init(VISTA_IDIOMA_ES);
     vista_mostrarMenu();
+
+
+
+
 }
 
 int cont_altaSocio (char* nombre,char* apellido,char* dni)

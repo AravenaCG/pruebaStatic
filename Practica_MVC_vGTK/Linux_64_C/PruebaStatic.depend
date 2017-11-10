@@ -2836,7 +2836,7 @@
 
 1510228742 /home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/Validaciones.h
 
-1510270726 source:/home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/Controlador.c
+1510274040 source:/home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/Controlador.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -2844,6 +2844,7 @@
 	"Socio.h"
 	"Vista.h"
 	"Controlador.h"
+	"DataManager.h"
 
 1510228746 /home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/Vista.h
 
@@ -2864,5 +2865,5 @@
 	"ArrayList.h"
 	"Socio.h"
 
-1510273722 /home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/DataManager.h
+1510275171 /home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/DataManager.h
 
