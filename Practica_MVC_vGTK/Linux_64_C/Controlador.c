@@ -5,7 +5,7 @@
 #include "Socio.h"
 #include "Vista.h"
 #include "Controlador.h"
-
+#include "DataManager.h"
 
 static ArrayList* nominaSocios;
 static int proximoIdSocio=0;
@@ -25,6 +25,7 @@ int cont_altaSocio (char* nombre,char* apellido,char* dni)
     Socio* auxSocio;
     auxSocio = soc_new(nombre,apellido,dni,getNewId(),SOCIO_ESTADO_ACTIVO);
     al_add(nominaSocios,auxSocio);
+    dm_saveAll(nominaSocios);
     return 0;
 }
 
@@ -41,7 +42,7 @@ int cont_bajaSocio (int id)
         soc_setEstado(auxSocio,SOCIO_ESTADO_INACTIVO);
     }
 
-
+    dm_saveAll(nominaSocios);
     return retorno;
 }
 
@@ -61,7 +62,7 @@ int cont_modificarSocio (char* nombre,char* apellido,char* dni, int id)
 
     }
 
-
+    dm_saveAll(nominaSocios);
     return retorno;
 }
 

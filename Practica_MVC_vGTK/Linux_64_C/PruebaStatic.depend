@@ -2809,11 +2809,12 @@
 	<stdlib.h>
 	"Controlador.h"
 
-1510228744 source:/home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/DataManager.c
+1510273822 source:/home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/DataManager.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"Socio.h"
+	"DataManager.h"
 
 1510228746 /home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/ArrayList.h
 
@@ -2862,4 +2863,6 @@
 	<string.h>
 	"ArrayList.h"
 	"Socio.h"
+
+1510273722 /home/alumno/cristian/Practica_MVC_vGTK/Linux_64_C/DataManager.h
 
